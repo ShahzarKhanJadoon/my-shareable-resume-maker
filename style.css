@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fbef17;
+    color: #333;
+    padding: 20px;
+    background-image: url("my background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    background-color: #000000;
+    color: #fbef17;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: box-shadow 0.3s ease;
+    position: relative;
+}
+
+.container:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #fbef17;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fbef17;
+}
+
+input, textarea {
+    padding: 14px;
+    font-size: 1.1rem;
+    border: 2px solid #fbef17;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    resize: vertical;
+}
+
+textarea {
+    max-height: 250px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+input:focus, textarea:focus {
+    border-color: #a39b00;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 64, 129, 0.3);
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #fbef17;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #444444;
+    color: #fbef17;
+    transform: translateY(-2px);
+}
+
+#resume-display {
+    margin-top: 40px;
+}
+
+#resume-display h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fbef17;
+}
+
+#resume-display .resume-section {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fbef17;
+}
+
+#resume-display .resume-section:last-child {
+    border-bottom: none;
+}
+
+#resume-display h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #fbef17;
+}
+
+#resume-display p {
+    font-size: 1.1rem;
+    color: #fbef17;
+    line-height: 1.6;
+}
+
+#shareable-link-container {
+    display: none;
+    margin-top: 20px;
+}
+
+#shareable-link {
+    color: #fbef17;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+}
